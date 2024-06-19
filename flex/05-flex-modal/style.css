@@ -20,6 +20,54 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.main{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+padding: 10px;
+
+}
+
+.toptwo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  font-size: large;
+  padding-bottom: 10px;
+}
+
+.maintext{
+  display: flex;
+ flex-direction: column;
+
+gap: 10px;
+}
+.hbt{
+
+
+
+}
+
+.topbuttons{
+  padding: 10px;
+}
+.bottombuttons{
+  display: flex;
+  flex-direction: row;
+ 
+  align-items: flex-start;
+  padding-top: 10px;
+  gap: 10px;
+ 
+
 }
 
 .icon {

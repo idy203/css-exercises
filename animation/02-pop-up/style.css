@@ -35,10 +35,11 @@ button {
   top: 50%;
   left: 50%;
   transform-origin: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translateY(-100px); /* set position of where modal comes in from*/
   pointer-events: none;
-  opacity: 0%;
+  opacity: 0;
   text-align: center;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out; /*make animation smooth*/
 }
 
 .popup-modal p {
@@ -50,14 +51,16 @@ button {
   position: fixed;
   inset: 0;
   background: #000;
-  opacity: 0%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /*make transition smooth*/
 }
 
 .popup-modal.show {
-  opacity: 100%;
+  transform: translate(-50%, -50%) translateY(0);
+  opacity: 20;
   pointer-events: all;
 }
 
 .backdrop.show {
-  opacity: 30%;
+  opacity: 0.3;
 }
